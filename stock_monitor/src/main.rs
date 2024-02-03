@@ -1,3 +1,8 @@
+use plotting::test_plot;
+
+
+mod plotting;
+
 fn main() {
-    println!("Hello, world!");
+    test_plot();
 }
