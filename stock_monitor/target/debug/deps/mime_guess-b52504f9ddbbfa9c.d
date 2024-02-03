@@ -1,0 +1,12 @@
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libmime_guess-b52504f9ddbbfa9c.rmeta: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/impl_bin_search.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/mime_types.rs /home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/build/mime_guess-391191f77e531409/out/mime_types_generated.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libmime_guess-b52504f9ddbbfa9c.rlib: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/impl_bin_search.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/mime_types.rs /home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/build/mime_guess-391191f77e531409/out/mime_types_generated.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/mime_guess-b52504f9ddbbfa9c.d: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/impl_bin_search.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/mime_types.rs /home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/build/mime_guess-391191f77e531409/out/mime_types_generated.rs
+
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/lib.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/impl_bin_search.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/mime_guess-2.0.4/src/mime_types.rs:
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/build/mime_guess-391191f77e531409/out/mime_types_generated.rs:
+
+# env-dep:OUT_DIR=/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/build/mime_guess-391191f77e531409/out

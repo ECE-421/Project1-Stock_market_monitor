@@ -1,0 +1,9 @@
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libtokio_tungstenite-f095c4f8b10013eb.rmeta: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/compat.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/connect.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/handshake.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/stream.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/tokio_tungstenite-f095c4f8b10013eb.d: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/compat.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/connect.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/handshake.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/stream.rs
+
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/lib.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/compat.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/connect.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/handshake.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/tokio-tungstenite-0.11.0/src/stream.rs:

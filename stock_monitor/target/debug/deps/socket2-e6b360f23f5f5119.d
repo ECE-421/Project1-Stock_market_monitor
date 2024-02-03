@@ -1,0 +1,11 @@
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libsocket2-e6b360f23f5f5119.rmeta: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sockaddr.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/socket.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/utils.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sys/unix.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libsocket2-e6b360f23f5f5119.rlib: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sockaddr.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/socket.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/utils.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sys/unix.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/socket2-e6b360f23f5f5119.d: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sockaddr.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/socket.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/utils.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sys/unix.rs
+
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/lib.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sockaddr.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/socket.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/utils.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/socket2-0.3.19/src/sys/unix.rs:

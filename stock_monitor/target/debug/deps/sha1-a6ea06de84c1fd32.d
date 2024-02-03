@@ -1,0 +1,11 @@
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libsha1-a6ea06de84c1fd32.rmeta: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/consts.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/soft.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/x86.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libsha1-a6ea06de84c1fd32.rlib: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/consts.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/soft.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/x86.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/sha1-a6ea06de84c1fd32.d: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/consts.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/soft.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/x86.rs
+
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/lib.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/consts.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/soft.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/sha-1-0.9.8/src/compress/x86.rs:

@@ -1,0 +1,11 @@
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/libgeneric_array-14c5c318d3265080.rmeta: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/hex.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/impls.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/arr.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/functional.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/iter.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/sequence.rs
+
+/home/koss/wint2024/ece421/group_projects/Project1-Stock_market_monitor/stock_monitor/target/debug/deps/generic_array-14c5c318d3265080.d: /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/lib.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/hex.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/impls.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/arr.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/functional.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/iter.rs /home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/sequence.rs
+
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/lib.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/hex.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/impls.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/arr.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/functional.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/iter.rs:
+/home/koss/.cargo/registry/src/index.crates.io-6f17d22bba15001f/generic-array-0.14.7/src/sequence.rs:
