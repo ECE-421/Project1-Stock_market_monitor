@@ -1,8 +1,12 @@
-use plotting::test_plot;
-
 
 mod plotting;
 
+mod utils;
+
+
 fn main() {
-    test_plot();
+    plotting::test_plot();
+    plotting::test_sma_plot();
+
 }
+
