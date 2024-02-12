@@ -2,7 +2,6 @@ use yahoo_finance_api as yahoo;
 use time::OffsetDateTime;
 use tokio_test;
 
-
 pub fn get_quote_history(ticker_symbol: &str, month_offset: i64 ) -> Vec<yahoo::Quote> {
    let end = OffsetDateTime::now_utc();
    let start = end - time::Duration::days(30 * month_offset); // if month_offset = 6 it would be 30 * 6 days
@@ -13,8 +12,7 @@ pub fn get_quote_history(ticker_symbol: &str, month_offset: i64 ) -> Vec<yahoo::
          let quotes = resp.quotes().unwrap();
          return quotes
       }
-      Err(err) => {
-         eprintln!("Error: {:?}", err);
+      Err(_err) => {
          return Vec::new()
       }
    }
