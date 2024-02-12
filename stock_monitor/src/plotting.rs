@@ -13,14 +13,10 @@ NOTES:
 */
 
 //TODO - Fix dates on x-axis to be human readable (not UNIX time stamps)
-
-/*
-TODO - plot other data like:
-    - slow/fast moving averages
-    - bollinger bands
-    - MACD  (req  different chart)
-    - RSI  (req  different chart)
-*/
+//TODO - Update chart title
+//TODO - Identify and Highlight volatile days different color
+//TODO - Plot bollinger bands
+//TODO - Get plot working on a web server or interactive GUI (not just image gen backend)
 
 use plotters::prelude::*;
 use tokio_test;
@@ -29,8 +25,7 @@ use yahoo_finance_api as yahoo;
 // import the calc_simple_moving_average function from the utils module
 use super::utils::calc_simple_moving_average;
 
-
-const OUT_FILE_NAME: &str = "./candlestick_plot.png";
+const CANDLE_STICK_OUT_FILE_NAME: &str = "./candlestick_plot.png";
 const SMA_PLOT_OUT_FILE_NAME: &str = "./sma_plot.png";
 
 pub fn make_candlestick_plot(
@@ -38,7 +33,7 @@ pub fn make_candlestick_plot(
 ) -> Result<(), Box<dyn std::error::Error>> {
     println!("Generating SMA plot...");
 
-    let root = BitMapBackend::new(OUT_FILE_NAME, (1024, 768)).into_drawing_area();
+    let root = BitMapBackend::new(CANDLE_STICK_OUT_FILE_NAME, (1024, 768)).into_drawing_area();
     root.fill(&WHITE)?;
 
     let min_time = quotes.iter().map(|quote| quote.timestamp).min().unwrap() as i64;
@@ -81,7 +76,7 @@ pub fn make_candlestick_plot(
 
     root.present()
         .expect("Unable to save result to file. Enusre ");
-    println!("Plot saved to {}", OUT_FILE_NAME);
+    println!("Plot saved to {}", CANDLE_STICK_OUT_FILE_NAME);
 
     Ok(())
 }
@@ -91,7 +86,7 @@ pub fn make_sma_plot(
 ) -> Result<(), Box<dyn std::error::Error>> {
     println!("Generating SMA plot...");
 
-    let root = BitMapBackend::new(OUT_FILE_NAME, (1024, 768)).into_drawing_area();
+    let root = BitMapBackend::new(SMA_PLOT_OUT_FILE_NAME, (1024, 768)).into_drawing_area();
     root.fill(&WHITE)?;
 
     // Define times for x-axis
@@ -108,12 +103,12 @@ pub fn make_sma_plot(
         .min_by(|a, b| a.partial_cmp(b).unwrap())
         .unwrap();
 
-    let max_price = quotes  
+    let max_price = quotes
         .iter()
         .map(|quote| quote.high)
         .max_by(|a, b| a.partial_cmp(b).unwrap())
         .unwrap();
-    
+
     let mut chart = ChartBuilder::on(&root)
         .x_label_area_size(40)
         .y_label_area_size(40)
@@ -122,12 +117,11 @@ pub fn make_sma_plot(
 
     chart.configure_mesh().draw()?;
 
-
     //Populate the chart with the data from the quotes vector
 
     let mut line_data: Vec<(i64, f64)> = Vec::new();
     for i in 0..sma_data.len() {
-        line_data.push( (quotes[i].timestamp as i64, sma_data[i] as f64) );
+        line_data.push((quotes[i].timestamp as i64, sma_data[i] as f64));
     }
 
     chart
@@ -136,7 +130,6 @@ pub fn make_sma_plot(
         .label("SMA Plot")
         .legend(|(x, y)| PathElement::new(vec![(x, y), (x + 20, y)], &BLUE));
 
-
     chart
         .configure_series_labels()
         .position(SeriesLabelPosition::UpperMiddle)
@@ -144,7 +137,6 @@ pub fn make_sma_plot(
         .background_style(WHITE.filled())
         .draw()
         .unwrap();
-
 
     root.present()
         .expect("Unable to save result to file. Enusre ");
@@ -163,7 +155,7 @@ fn get_data() -> Vec<yahoo_finance_api::Quote> {
 pub fn test_plot() -> Result<(), Box<dyn std::error::Error>> {
     let stock_data = get_data();
     let plot_test = make_candlestick_plot(&stock_data);
-    
+
     plot_test
 }
 
