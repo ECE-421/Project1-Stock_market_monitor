@@ -1,1 +1,3 @@
 stock_monitor/target/*
+stock_monitor/target/.rustc_info.json
+stock_monitor/Cargo.lock
