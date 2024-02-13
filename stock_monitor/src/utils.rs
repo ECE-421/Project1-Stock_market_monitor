@@ -1,4 +1,15 @@
+/*
+Written by Devin Headrick
+For ECE421 Project 1 - Stock market monitor
+Winter 2024 Semester
+Univserity of Alberta
 
+Referenced: https://tms-dev-blog.com/plot-candles-sma-using-rust-and-plotters/
+
+NOTES:
+- Util functions for the stock_monitor project
+
+*/
 
 pub fn calc_simple_moving_average(data_set: &Vec<f64>, window_size: usize) -> Option<Vec<f64>> {
     if window_size > data_set.len() {
@@ -15,8 +26,4 @@ pub fn calc_simple_moving_average(data_set: &Vec<f64>, window_size: usize) -> Op
         window_start += 1;
     }
     Some(result)
-}
-
-pub fn dummy_function() {
-    println!("This is a dummy function");
 }

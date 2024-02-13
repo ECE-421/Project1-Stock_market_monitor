@@ -5,8 +5,9 @@ mod utils;
 
 
 fn main() {
-    plotting::test_plot();
-    plotting::test_sma_plot();
-
+    let ticker: &str = "AAPL";
+    plotting::test_plot(ticker);
+    plotting::test_sma_plot(ticker);
+    plotting::test_candlestick_and_sma_plot(ticker);
 }
 
