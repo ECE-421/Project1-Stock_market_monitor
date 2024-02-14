@@ -11,6 +11,9 @@ NOTES:
 
 */
 
+use yahoo_finance_api as yahoo;
+use yahoo::Quote;
+
 pub fn calc_simple_moving_average(data_set: &Vec<f64>, window_size: usize) -> Option<Vec<f64>> {
     if window_size > data_set.len() {
         return None;
@@ -26,4 +29,19 @@ pub fn calc_simple_moving_average(data_set: &Vec<f64>, window_size: usize) -> Op
         window_start += 1;
     }
     Some(result)
+}
+
+pub fn find_volatile_days(quotes: &[Quote], percentage_threshold: f64) -> Vec<&Quote> {
+    quotes
+        .iter()
+        .filter(|quote| {
+            let high = quote.high;
+            let low = quote.low;
+            let close = quote.close;
+            let price_difference = (high - low).abs();
+            let percentage_change = price_difference / close;
+
+            percentage_change > percentage_threshold
+        })
+        .collect()
 }
