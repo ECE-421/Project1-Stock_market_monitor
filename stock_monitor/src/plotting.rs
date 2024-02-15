@@ -31,6 +31,7 @@ use super::utils::{
 const CANDLE_STICK_OUT_FILE_NAME: &str = "./candlestick_plot.png";
 const SMA_PLOT_OUT_FILE_NAME: &str = "./sma_plot.png";
 const OVERLAY_PLOT_OUT_FILE_NAME: &str = "./candlestick_sma_overlay_plot.png";
+const CLOSING_PRICE_PLOT_OUT_FILE_NAME: &str = "./closing_price_overlay_plot.png";
 
 const CAPTION_FONT: &str = "sans-serif";
 
@@ -260,6 +261,66 @@ pub fn make_sma_plot(
     root.present()
         .expect("Unable to save result to file. Enusre ");
     println!("Plot saved to {}", SMA_PLOT_OUT_FILE_NAME);
+
+    Ok(())
+}
+
+
+pub fn make_closing_price_plot(
+    ticker: &str,
+    quotes: &Vec<yahoo_finance_api::Quote>,
+) -> Result<(), Box<dyn std::error::Error>> {
+    println!("Generating closing price plot for {}", ticker);
+
+    // Define times for x-axis
+    let date_range = get_start_end_dates(quotes);
+    let price_range = get_min_max_closing_prices(quotes);
+
+    let root =
+        BitMapBackend::new(CLOSING_PRICE_PLOT_OUT_FILE_NAME, (PLOT_WIDTH, PLOT_HEIGHT)).into_drawing_area();
+    root.fill(&WHITE)?;
+
+    let caption = format!("{} - Closing prices", ticker);
+    let mut chart = ChartBuilder::on(&root)
+        .x_label_area_size(40)
+        .y_label_area_size(40)
+        .caption(caption, (CAPTION_FONT, 50.0).into_font())
+        .build_cartesian_2d(date_range.0..date_range.1, price_range.0..price_range.1)?;
+
+    chart.configure_mesh()
+    .x_desc("Date  [YYYY-MM-DD]")
+    .y_desc("Price [USD]")
+    .x_label_style(("sans-serif", 15).into_font())
+    .y_label_style(("sans-serif", 15).into_font())
+    .draw()?;
+
+    let mut line_data: Vec<(NaiveDate, f64)> = Vec::new();
+    for i in 0..quotes.len() {
+        line_data.push((
+            NaiveDateTime::from_timestamp_opt(quotes[i].timestamp as i64, 0)
+                .unwrap()
+                .date(),
+            quotes[i].close as f64,
+        ));
+    }
+
+    chart
+        .draw_series(LineSeries::new(line_data, PURPLE.stroke_width(3)))
+        .unwrap()
+        .label("Closing Prices")
+        .legend(|(x, y)| PathElement::new(vec![(x, y), (x+10, y)], &PURPLE));
+
+    chart
+        .configure_series_labels()
+        .position(SeriesLabelPosition::UpperMiddle)
+        .label_font(("sans-serif", 30.0).into_font())
+        .background_style(WHITE.filled())
+        .draw()
+        .unwrap();
+
+    root.present()
+        .expect("Unable to save result to file. Enusre ");
+    println!("Plot saved to {}", CLOSING_PRICE_PLOT_OUT_FILE_NAME);
 
     Ok(())
 }
