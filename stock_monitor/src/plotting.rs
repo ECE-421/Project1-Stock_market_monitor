@@ -266,7 +266,7 @@ pub fn make_sma_plot(
 }
 
 
-pub fn make_closing_price_plot(
+pub fn make_closing_price_plot_with_volatility(
     ticker: &str,
     quotes: &Vec<yahoo_finance_api::Quote>,
 ) -> Result<(), Box<dyn std::error::Error>> {
@@ -295,7 +295,8 @@ pub fn make_closing_price_plot(
     .draw()?;
 
     let mut line_data: Vec<(NaiveDate, f64)> = Vec::new();
-    for i in 0..quotes.len() {
+
+     for i in 0..quotes.len() {
         line_data.push((
             NaiveDateTime::from_timestamp_opt(quotes[i].timestamp as i64, 0)
                 .unwrap()
@@ -303,6 +304,22 @@ pub fn make_closing_price_plot(
             quotes[i].close as f64,
         ));
     }
+
+    chart
+        .draw_series(
+            quotes
+                .iter()
+                .filter(|quote| is_volatile_day(quote, VOLATILE_PERCENTAGE_THRESHOLD)) // Filter only volatile quotes
+                .map(|quote| {
+                    let x = NaiveDateTime::from_timestamp_opt(quote.timestamp as i64, 0)
+                        .unwrap()
+                        .date();
+                    let y = quote.close as f64;
+
+                    ErrorBar::new_vertical(x, quote.low, y, quote.high, RED.filled(), 10)
+                }),
+        )
+        .unwrap();
 
     chart
         .draw_series(LineSeries::new(line_data, PURPLE.stroke_width(3)))
