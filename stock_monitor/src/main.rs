@@ -1,14 +1,13 @@
 
 mod plotting;
-
 mod utils;
-
+mod command_line_parser; 
 
 fn main() {
-    let ticker: &str = "AAPL";
-    // plotting::test_plot(ticker);
-    // plotting::test_sma_plot(ticker);
-    plotting::test_candlestick_and_sma_plot(ticker);
-    plotting::test_print_min_max_closing_price_and_date();
+    let stock_ticker = command_line_parser::read_stock_ticker();
+    if command_line_parser::check_stock_ticker(stock_ticker) {
+        // api
+        // plot
+    }
 
 }
