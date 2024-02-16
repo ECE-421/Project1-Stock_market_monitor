@@ -1,3 +1,5 @@
+use plotting::make_closing_price_plot_with_volatility;
+
 use crate::plotting::{make_candlestick_and_sma_plot, print_min_max_closing_prices_and_date};
 
 mod plotting;
@@ -14,8 +16,13 @@ fn main() {
          println!("The entered stock ticker of {}, may not exist", stock_ticker);
       } else {
          if let Err(err) = make_candlestick_and_sma_plot(stock_ticker.as_str(), &quotes) {
-            println!("Error occurred while plotting: {}", err);
+            println!("Error occurred while plotting candlestick & sma: {}", err);
          }
+
+         if let Err(err) = make_closing_price_plot_with_volatility(stock_ticker.as_str(), &quotes){
+            println!("Error occurred while plotting closing prices and volatile days: {}", err)
+         }
+
          print_min_max_closing_prices_and_date(&quotes);
       }
    }

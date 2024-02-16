@@ -285,6 +285,7 @@ pub fn make_closing_price_plot_with_volatility(
         .x_label_area_size(40)
         .y_label_area_size(40)
         .caption(caption, (CAPTION_FONT, 50.0).into_font())
+        .margin(20)
         .build_cartesian_2d(date_range.0..date_range.1, price_range.0..price_range.1)?;
 
     chart.configure_mesh()
