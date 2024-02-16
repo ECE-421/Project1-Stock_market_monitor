@@ -36,5 +36,37 @@ pub fn check_stock_ticker(ticker: String) -> bool {
     true
 }
 
+#[cfg(test)]
+mod tests {
+    use super::*;
 
+    #[test]
+    fn test_check_stock_ticker_lenth_invalid() {
+        assert!(!check_stock_ticker_length("as"));
+        assert!(!check_stock_ticker_length("qwerty"));
+
+    }
+
+    #[test]
+    fn test_check_stock_ticker_lenth_valid() {
+        assert!(check_stock_ticker_length("asd"));
+        assert!(check_stock_ticker_length("asder"));
+    }
+
+    #[test]
+    fn test_check_stock_ticker_alphabetic_valid() {
+        assert!(check_stock_ticker_alphabetic("ABC"));
+        assert!(check_stock_ticker_alphabetic("XYZ"));
+        assert!(check_stock_ticker_alphabetic("WXYZ"));
+    }
+
+    #[test]
+    fn test_check_stock_ticker_alphabetic_invalid() {
+        assert!(!check_stock_ticker_alphabetic("123"));
+        assert!(!check_stock_ticker_alphabetic("ABC123"));
+        assert!(!check_stock_ticker_alphabetic("ABC!"));
+    }
+
+
+}
 
