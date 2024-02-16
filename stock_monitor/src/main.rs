@@ -1,3 +1,7 @@
+use crate::plotting::{make_candlestick_and_sma_plot, print_min_max_closing_prices_and_date};
+
+mod plotting;
+mod utils;
 mod command_line_parser; 
 mod yahoo_api;
 
@@ -9,10 +13,10 @@ fn main() {
       if quotes.is_empty() {
          println!("The entered stock ticker of {}, may not exist", stock_ticker);
       } else {
-         println!("Quotes for {}: {:?}", &stock_ticker, quotes);
+         if let Err(err) = make_candlestick_and_sma_plot(stock_ticker.as_str(), &quotes) {
+            println!("Error occurred while plotting: {}", err);
+         }
+         print_min_max_closing_prices_and_date(&quotes);
       }
-      
-       // api
-       // plot
    }
 }

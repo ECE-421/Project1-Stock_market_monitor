@@ -6,12 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+chrono = "0.4.33"
 clap = { version = "4.4.18", features = ["derive"] }
-time = "0.3"
-tokio = { version = "0.2", features = ["full"] }
-chrono = "0.4"
-chrono-tz = "0.8.5"
+tokio = { version = "1.36.0", features = ["full"] }
 chronoutil = "0.2.6"
+plotters = "0.3.5"
 yahoo_finance_api = "2.1.0"
+time = "0.3"
+chrono-tz = "0.8.5"
 tokio-test = "0.4.3"
 
