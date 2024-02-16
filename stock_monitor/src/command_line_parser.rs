@@ -17,7 +17,7 @@ pub fn read_stock_ticker() -> String {
 }
 
 fn check_stock_ticker_length(ticker: &str) -> bool {
-    ticker.len() >= 3 && ticker.len() <= 5
+    ticker.len() >= 1 && ticker.len() <= 5
 }
 
 fn check_stock_ticker_alphabetic(ticker: &str) -> bool {
