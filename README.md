@@ -83,4 +83,15 @@ We wanted to display as much relevant stock info as possible so we have 3 main p
 
 # Project Setup
 
-clone the repo using 
+1. clone the repo
+```git clone git@github.com:ECE-421/Project1-Stock_market_monitor.git```
+
+2. Navigate to the stock_monitor folder
+3. To install the nessecarry rust crates and build the project run  
+   ```cargo build```
+
+# Usage Instructions
+
+1. Once built run the program using
+   ```cargo run <ticker symbol>```
+2. 3 photo plots will be generated based on the entered ticker symbol
