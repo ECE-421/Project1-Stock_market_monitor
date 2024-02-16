@@ -94,4 +94,4 @@ We wanted to display as much relevant stock info as possible so we have 3 main p
 
 1. Once built run the program using
    ```cargo run <ticker symbol>```
-2. 3 photo plots will be generated based on the entered ticker symbol
+2. 2 photo plots will be generated based on the entered ticker symbol
