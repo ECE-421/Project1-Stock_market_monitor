@@ -41,6 +41,13 @@ pub fn is_volatile_day(quote: &Quote, percentage_threshold: f64) -> bool {
 
 ## Simple Moving Average 
 
+
+\[ SMA = \frac{{X_1 + X_2 + X_3 + \ldots + X_n}}{{n}} \]
+
+Where:
+- \( X_1, X_2, X_3, \ldots, X_n \) are the individual data points in the time series.
+- \( n \) is the number of data points considered in the calculation.
+
 ```rust
 pub fn calc_simple_moving_average(data_set: &Vec<f64>, window_size: usize) -> Option<Vec<f64>> {
     if window_size > data_set.len() {
