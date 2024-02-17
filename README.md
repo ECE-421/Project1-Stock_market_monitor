@@ -78,7 +78,7 @@ We wanted to display as much relevant stock info as possible so we have 3 main p
 2. Simple Moving Average
     The simple moving average is a pretty standard plot for any stock plot as it can give indicators on whether or not the stock price will fall/continue on its trend. This plot is a Line series plot.
 
-3. Candle Stick Plot
+3. Candle Stick Plot showing the SMA and candlesticks for each intra day price. Volatile days are highlighted blue. Days with net increase in closing price highlighted green. Days with net decrease in closing price highlighted red
 
 
 # Project Setup
@@ -94,4 +94,4 @@ We wanted to display as much relevant stock info as possible so we have 3 main p
 
 1. Once built run the program using
    ```cargo run <ticker symbol>```
-2. 3 photo plots will be generated based on the entered ticker symbol
+2. 2 photo plots will be generated based on the entered ticker symbol
